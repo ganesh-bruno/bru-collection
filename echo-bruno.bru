@@ -6,26 +6,13 @@ meta {
 
 post {
   url: https://echo.usebruno.com
-  body: multipartForm
+
+  body: json
   auth: inherit
 }
 
-body:form-urlencoded {
-  sdsd: '''
-    {
-    "tomato":"asdsad"
-    }
-  '''
-}
-
-body:multipart-form {
-  fggdhg: '''
-    {"a":"b",
-    "g":1
-    }
-  '''
-}
-
-settings {
-  encodeUrl: true
+body:json {
+  {
+    "name":"Bruno"
+  }
 }
